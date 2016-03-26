@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>UI Notifications</title>    
+    <link rel="stylesheet" type="text/css" href="lobibox/style.css" />
+</head>
+<body ng-app="myApp" class="col-md-12">
+
+<h2> UI-Notifications </h2>
+<h3><a href="https://github.com/asduser/form-validator.git" target="_blank"><img width="200" src="../images/githubDownloadButton.png"/></a></h3> 
+
+<div ng-controller="myController as ctrl">
+
+    <button class="btn btn-warning" ng-click="ctrl.openErrorPopup()">Error message</button>
+    <button class="btn btn-success"ng-click="ctrl.openSuccessPopup()">Success message</button>
+    <button class="btn btn-danger"ng-click="ctrl.confirm()">Show how does confirmation work</button>
+    <button class="btn btn-info"ng-click="ctrl.inform()">Show a simple inform message</button>
+
+</div>
+
+<script src="vendor/angular.js"></script>
+<script src="vendor/jquery.js"></script>
+<script src="lobibox/lobibox.js"></script>
+<script src="lobibox/messageboxes.js"></script>
+<script src="lobibox/notifications.js"></script>
+<script src="dist/module.js"></script>
+<script src="dist/uiNotifications.js"></script>
+<script src="example.js"></script>
+
+</body>
+</html>
