@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app="Game">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="style/style.css"/>
+</head>
+<body ng-controller="MainCtrl" ng-cloak>
+
+<div class="main-content">
+    <h1>{{ title }}</h1>
+    <h3>( {{ description }} )</h3>
+    <canvas width="450" height="400" id="canvas-game"></canvas>
+    <div ng-include="'partial/instruction_tmpl.html'"></div>
+</div>
+
+<canvas id='example'>Обновите браузер</canvas>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.4/angular.min.js"></script>
+<script src="module/app.js"></script>
+<script src="ctrl/MainCtrl.js"></script>
+
+<!-- Constants -->
+<script src="constant/config.js"></script>
+<!-- Services -->
+<script src="services/canvasService.js"></script>
+<script src="services/calcService.js"></script>
+
+</body>
+</html>
